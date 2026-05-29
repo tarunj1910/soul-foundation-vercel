@@ -1,645 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>Soul Foundation</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-<link rel="icon" type="image/jpeg" href="logo.jpg">
-
-  <style>
-
-    html{
-      scroll-behavior:smooth;
-    }
-
-    body{
-      font-family: Arial, Helvetica, sans-serif;
-      background:#ffffff;
-      color:#1f2937;
-      overflow-x:hidden;
-    }
-
-    .main-blue{
-      color:#062b87;
-    }
-
-    .main-cyan{
-      color:#46c7cc;
-    }
-
-    .bg-main-blue{
-      background:#062b87;
-    }
-
-    .bg-main-cyan{
-      background:#46c7cc;
-    }
-
-    .hero-bg{
-      background:
-      linear-gradient(to right, rgba(255,255,255,0.96), rgba(255,255,255,0.90)),
-      url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1600&auto=format&fit=crop');
-
-      background-size:cover;
-      background-position:center;
-    }
-
-    .title-style{
-      font-weight:900;
-      text-transform:uppercase;
-      line-height:1;
-      letter-spacing:1px;
-    }
-
-    .card-hover{
-      transition:0.4s;
-    }
-
-    .card-hover:hover{
-      transform:translateY(-10px);
-    }
-
-  </style>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soul Foundation | Home</title>
+<link rel="icon" href="logo.jpg">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+html{scroll-behavior:smooth;}
+.main-blue{color:#062b87;}
+.main-cyan{color:#46c7cc;}
+.bg-main-blue{background:#062b87;}
+.bg-main-cyan{background:#46c7cc;}
+.title-style{font-weight:900;text-transform:uppercase;line-height:1;}
+</style>
 </head>
-
-<body>
-
-<!-- =========================
-NAVBAR
-========================= -->
+<body class="bg-white text-gray-800">
 
 <nav class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-4">
+<img src="logo.jpg" class="w-20">
+<div>
+<div class="flex">
+<span class="bg-main-cyan text-white px-3 py-2 text-3xl title-style">SOUL</span>
+<span class="bg-main-blue text-white px-3 py-2 text-3xl title-style">FOUNDATION</span>
+</div>
+<p class="text-sm font-bold mt-1"><span class="main-blue">Charitable Trust For Adults & Children</span></p>
+</div>
+</div>
+<div class="hidden lg:flex gap-8 font-semibold text-gray-700">
 
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+  <a href="index.html" class="hover:text-cyan-500 transition">
+    Home
+  </a>
 
-    <!-- LEFT -->
+  <a href="about.html" class="hover:text-cyan-500 transition">
+    About Us
+  </a>
 
-    <div class="flex items-center gap-4">
+  <a href="our-work.html" class="hover:text-cyan-500 transition">
+    Our Initiatives
+  </a>
 
-      <!-- LOGO -->
+  <a href="gallery.html" class="hover:text-cyan-500 transition">
+    Gallery
+  </a>
 
-      <img src="logo.jpg" class="w-24">
+  <a href="support.html" class="hover:text-cyan-500 transition">
+    Support Us
+  </a>
 
-      <!-- TITLE -->
+  <a href="contact.html" class="hover:text-cyan-500 transition">
+    Contact Us
+  </a>
 
-      <div>
-
-        <div class="flex items-center flex-wrap">
-
-          <!-- SOUL -->
-
-          <span
-          class="text-3xl md:text-5xl
-          title-style text-white
-          bg-main-cyan px-4 py-2 shadow-md">
-
-            SOUL
-
-          </span>
-
-          <!-- FOUNDATION -->
-
-          <span
-          class="text-3xl md:text-5xl
-          title-style text-white
-          bg-main-blue px-4 py-2 shadow-md">
-
-            FOUNDATION
-
-          </span>
-
-        </div>
-
-        <!-- SUBTITLE -->
-
-        <p class="text-xs md:text-sm font-bold uppercase tracking-wide mt-2">
-
-          <span class="main-blue">
-            Charitable Trust
-          </span>
-
-          <span class="main-cyan">
-            For Adult & Children
-          </span>
-
-        </p>
-
-      </div>
-
-    </div>
-
-    <!-- NAV LINKS -->
-
-    <div class="hidden lg:flex gap-8 font-semibold text-gray-700">
-
-      <a href="#home" class="hover:text-cyan-500 transition">
-        Home
-      </a>
-
-      <a href="#about" class="hover:text-cyan-500 transition">
-        About
-      </a>
-
-      <a href="#work" class="hover:text-cyan-500 transition">
-        Our Work
-      </a>
-
-      <a href="#gallery" class="hover:text-cyan-500 transition">
-        Gallery
-      </a>
-
-      <a href="#contact" class="hover:text-cyan-500 transition">
-        Contact
-      </a>
-
-    </div>
-
-  </div>
-
+</div>
+</div>
 </nav>
 
-<!-- =========================
-HERO SECTION
-========================= -->
-
-<section id="home"
-class="hero-bg min-h-screen flex items-center py-24 overflow-hidden">
-
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center">
-
-    <!-- LEFT CONTENT -->
-
-    <div class="relative z-10">
-
-      <!-- MAIN TITLE -->
-
-      <div class="inline-flex flex-wrap items-center mb-6">
-
-        <!-- SOUL -->
-
-        <span
-        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl
-        title-style text-white
-        bg-main-cyan px-6 py-3 shadow-xl">
-
-          SOUL
-
-        </span>
-
-        <!-- FOUNDATION -->
-
-        <span
-        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl
-        title-style text-white
-        bg-main-blue px-6 py-3 shadow-xl">
-
-          FOUNDATION
-
-        </span>
-
-      </div>
-
-      <!-- SUBTITLE -->
-
-      <h2 class="text-2xl md:text-3xl font-black uppercase leading-tight">
-
-        <span class="main-blue">
-          Charitable Trust
-        </span>
-
-        <span class="main-cyan">
-          For Adult & Children
-        </span>
-
-      </h2>
-
-      <!-- DESCRIPTION -->
-
-      <p class="mt-8 text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl">
-
-        A ray of hope for mentally challenged children,
-        neglected elderly people and needy street dwellers.
-
-        We work with compassion, dignity and humanity
-        to create a better future for vulnerable lives.
-
-      </p>
-
-      <!-- BUTTONS -->
-
-      <div class="mt-10 flex flex-wrap gap-5">
-
-        <a href="#about"
-        class="bg-main-cyan hover:opacity-90
-        text-white px-8 py-4 text-lg
-        font-bold rounded-2xl transition shadow-lg">
-
-          About Us
-
-        </a>
-
-        <a href="#contact"
-        class="bg-main-blue hover:opacity-90
-        text-white px-8 py-4 text-lg
-        font-bold rounded-2xl transition shadow-lg">
-
-          Support Us
-
-        </a>
-
-      </div>
-
-    </div>
-
-    <!-- RIGHT IMAGE -->
-
-    <div class="relative flex justify-center lg:justify-end">
-
-      <img
-      src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop"
-
-      class="w-full max-w-lg xl:max-w-xl
-      h-auto object-cover
-      rounded-[20px] shadow-2xl">
-
-    </div>
-
-  </div>
-
+<section class="py-24 bg-gray-50">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-6xl font-black main-blue">Together We Can Transform Lives</h1>
+<p class="mt-8 text-xl leading-relaxed">
+Soul Foundation is a charitable trust dedicated to serving individuals with intellectual and developmental disabilities, supporting elderly citizens, feeding those in need, and uplifting vulnerable communities through compassion, dignity, and meaningful action.
+</p>
+<div class="mt-8 flex gap-4">
+<a href="about.html" class="bg-main-cyan text-white px-6 py-3 rounded-xl font-bold">About Us</a>
+<a href="support.html" class="bg-main-blue text-white px-6 py-3 rounded-xl font-bold">Support Our Cause</a>
+</div>
+</div>
+<div>
+<img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl">
+</div>
+</div>
 </section>
 
-<!-- =========================
-ABOUT
-========================= -->
-
-<section id="about" class="py-28 bg-white">
-
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
-
-    <div>
-
-      <p class="uppercase font-bold tracking-widest main-cyan">
-        About Soul Foundation
-      </p>
-
-      <h2 class="text-5xl font-black mt-4 main-blue">
-        Our Mission
-      </h2>
-
-      <p class="mt-8 text-lg text-gray-700 leading-relaxed">
-
-        Soul Foundation is a charitable trust dedicated to uplifting
-        the lives of vulnerable and neglected individuals in society.
-
-      </p>
-
-      <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-
-        We support mentally challenged children who are often ignored,
-        abandoned or misunderstood and provide them emotional care,
-        rehabilitation support and a loving environment.
-
-      </p>
-
-      <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-
-        We also care for elderly people who are lonely,
-        neglected or left without support, helping them
-        live with dignity and compassion.
-
-      </p>
-
-      <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-
-        In addition, we provide food for needy street dwellers
-        and people suffering from hunger and poverty because
-        nobody deserves to sleep hungry.
-
-      </p>
-
-      <p class="mt-6 text-lg text-gray-700 leading-relaxed">
-
-        As our trust grows, we aspire to expand our services into
-        healthcare assistance, rehabilitation programs,
-        education support, women empowerment,
-        skill development and broader community welfare initiatives.
-
-      </p>
-
-    </div>
-
-    <div>
-
-      <img
-      src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop"
-
-      class="rounded-[40px] shadow-2xl">
-
-    </div>
-
-  </div>
-
+<section class="py-20">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid md:grid-cols-4 gap-6 text-center">
+<div class="shadow-lg p-8 rounded-3xl"><h3 class="text-4xl font-black main-blue">2023</h3><p>Founded</p></div>
+<div class="shadow-lg p-8 rounded-3xl"><h3 class="text-4xl font-black main-cyan">500+</h3><p>Lives Impacted</p></div>
+<div class="shadow-lg p-8 rounded-3xl"><h3 class="text-4xl font-black main-blue">100+</h3><p>Food Drives</p></div>
+<div class="shadow-lg p-8 rounded-3xl"><h3 class="text-4xl font-black main-cyan">50+</h3><p>Volunteers</p></div>
+</div>
+</div>
 </section>
 
-<!-- =========================
-OUR WORK
-========================= -->
-
-<section id="work" class="py-28 bg-gray-100">
-
-  <div class="max-w-7xl mx-auto px-6">
-
-    <div class="text-center">
-
-      <p class="uppercase font-bold tracking-widest main-cyan">
-        What We Do
-      </p>
-
-      <h2 class="text-5xl font-black mt-4 main-blue">
-        Our Core Initiatives
-      </h2>
-
-      <p class="mt-6 text-lg text-gray-600 max-w-3xl mx-auto">
-        We are committed to serving society through compassion,
-        support, nourishment and humanity.
-      </p>
-
-    </div>
-
-    <div class="grid lg:grid-cols-3 gap-10 mt-20">
-
-      <!-- CARD 1 -->
-
-      <div class="bg-white rounded-[35px]
-      overflow-hidden shadow-xl card-hover">
-
-        <img
-        src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop"
-
-        class="h-64 w-full object-cover">
-
-        <div class="p-8">
-
-          <h3 class="text-2xl font-black main-cyan mb-4">
-            Support for Mentally Challenged Children
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-
-            We provide emotional care, rehabilitation,
-            guidance and support for mentally challenged children
-            who are often ignored or abandoned.
-
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 2 -->
-
-      <div class="bg-white rounded-[35px]
-      overflow-hidden shadow-xl card-hover">
-
-        <img
-        src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=1200&auto=format&fit=crop"
-
-        class="h-64 w-full object-cover">
-
-        <div class="p-8">
-
-          <h3 class="text-2xl font-black text-green-700 mb-4">
-            Elderly Care
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-
-            We care for elderly people who are neglected,
-            lonely or abandoned and ensure they receive love,
-            food, care and emotional support.
-
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 3 -->
-
-      <div class="bg-white rounded-[35px]
-      overflow-hidden shadow-xl card-hover">
-
-        <img
-        src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop"
-
-        class="h-64 w-full object-cover">
-
-        <div class="p-8">
-
-          <h3 class="text-2xl font-black main-blue mb-4">
-            Feeding the Needy
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed">
-
-            We distribute food to needy street dwellers
-            and hungry individuals because no human being
-            deserves to sleep hungry.
-
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<section class="py-24 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl font-black main-blue text-center">Welcome to Soul Foundation</h2>
+<p class="text-xl text-center max-w-4xl mx-auto mt-8 leading-relaxed">
+Established in 2023, Soul Foundation was created with a simple yet powerful belief: every human life deserves dignity, care, respect, and opportunity. Through our welfare initiatives, community outreach programs, and compassionate support services, we strive to create meaningful change for individuals and families facing challenges in their daily lives.
+</p>
+</div>
 </section>
 
-<!-- =========================
-GALLERY
-========================= -->
-
-<section id="gallery" class="py-28 bg-white">
-
-  <div class="max-w-7xl mx-auto px-6">
-
-    <div class="text-center">
-
-      <p class="uppercase font-bold tracking-widest main-cyan">
-        Our Moments
-      </p>
-
-      <h2 class="text-5xl font-black mt-4 main-blue">
-        Gallery
-      </h2>
-
-    </div>
-
-    <div class="grid md:grid-cols-3 gap-8 mt-20">
-
-      <img
-      src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1200&auto=format&fit=crop"
-
-      class="rounded-[30px] shadow-xl h-80 object-cover w-full">
-
-      <img
-      src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=1200&auto=format&fit=crop"
-
-      class="rounded-[30px] shadow-xl h-80 object-cover w-full">
-
-      <img
-      src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=1200&auto=format&fit=crop"
-
-      class="rounded-[30px] shadow-xl h-80 object-cover w-full">
-
-    </div>
-
-  </div>
-
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl font-black text-center main-blue">Our Core Initiatives</h2>
+<div class="grid lg:grid-cols-4 gap-8 mt-16">
+<div class="p-8 shadow-xl rounded-3xl"><h3 class="font-black text-2xl main-cyan">Disability Support</h3><p class="mt-4">Supporting individuals with intellectual and developmental disabilities through care, inclusion, and community support.</p></div>
+<div class="p-8 shadow-xl rounded-3xl"><h3 class="font-black text-2xl main-blue">Elderly Care</h3><p class="mt-4">Providing dignity, companionship, and assistance to senior citizens in need.</p></div>
+<div class="p-8 shadow-xl rounded-3xl"><h3 class="font-black text-2xl main-cyan">Food Distribution</h3><p class="mt-4">Helping vulnerable individuals through food assistance and nutrition initiatives.</p></div>
+<div class="p-8 shadow-xl rounded-3xl"><h3 class="font-black text-2xl main-blue">Community Welfare</h3><p class="mt-4">Creating positive social impact through outreach and humanitarian activities.</p></div>
+</div>
+</div>
 </section>
 
-<!-- =========================
-CTA
-========================= -->
+<section class="py-24 bg-gray-100">
+<div class="max-w-7xl mx-auto px-6">
+<h2 class="text-5xl font-black text-center main-blue">Our Founders</h2>
+<p class="text-center max-w-4xl mx-auto mt-6 text-lg">
+Soul Foundation was founded by compassionate visionaries who believed that service to humanity is one of the highest responsibilities of society. Their commitment to helping vulnerable individuals continues to inspire every initiative undertaken by the Foundation.
+</p>
 
-<section class="bg-gradient-to-r from-cyan-600 to-blue-900 py-20">
+<div class="grid md:grid-cols-2 gap-10 mt-16">
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<img src="https://via.placeholder.com/250x250" class="mx-auto rounded-full">
+<h3 class="text-2xl font-black mt-6">Founder Name</h3>
+<p class="mt-3 text-gray-600">Edit this section with founder information.</p>
+</div>
 
-  <div class="max-w-7xl mx-auto px-6
-  flex flex-col lg:flex-row justify-between items-center gap-10">
-
-    <div>
-
-      <h2 class="text-4xl md:text-5xl font-black text-white">
-        Be The Reason Someone Smiles Today
-      </h2>
-
-      <p class="text-cyan-100 mt-6 text-xl">
-        Your support can bring hope, care and happiness to someone in need.
-      </p>
-
-    </div>
-
-    <a href="#contact"
-    class="bg-white text-blue-900 font-black
-    px-10 py-5 rounded-2xl text-xl
-    hover:bg-gray-100 transition">
-
-      Donate Now
-
-    </a>
-
-  </div>
-
+<div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+<img src="https://via.placeholder.com/250x250" class="mx-auto rounded-full">
+<h3 class="text-2xl font-black mt-6">Founder Name</h3>
+<p class="mt-3 text-gray-600">Edit this section with founder information.</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- =========================
-CONTACT
-========================= -->
-
-<section id="contact" class="py-28 bg-white">
-
-  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
-
-    <div>
-
-      <p class="uppercase font-bold tracking-widest main-cyan">
-        Contact Us
-      </p>
-
-      <h2 class="text-5xl font-black mt-4 main-blue">
-        Get In Touch
-      </h2>
-
-      <p class="mt-8 text-lg text-gray-700 leading-relaxed">
-
-        We welcome volunteers, supporters and kind-hearted people
-        who wish to make a positive impact in society.
-
-      </p>
-
-    </div>
-
-    <div class="space-y-8 text-lg text-gray-700">
-
-      <div>
-
-        <h3 class="font-black text-2xl main-blue mb-3">
-          Address
-        </h3>
-
-        <p>
-          Old No.23B, New No.9,
-          Old Bank Of Baroda Street,
-          Ambattur,
-          Thiruvallur District,
-          Chennai - 600053
-        </p>
-
-      </div>
-
-      <div>
-
-        <h3 class="font-black text-2xl main-blue mb-3">
-          Phone
-        </h3>
-
-        <p>
-          +91 9884152546
-        </p>
-
-      </div>
-
-      <div>
-
-        <h3 class="font-black text-2xl main-blue mb-3">
-          Email
-        </h3>
-
-        <p>
-          soulfoundation2024@gmail.com
-        </p>
-
-      </div>
-
-      <div>
-
-        <h3 class="font-black text-2xl main-blue mb-3">
-          Registration Number
-        </h3>
-
-        <p>
-          Regd No : 299/2023
-        </p>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+<div>
+<h2 class="text-4xl font-black main-blue">Our Vision</h2>
+<p class="mt-6 text-lg leading-relaxed">To build a compassionate and inclusive society where every individual, regardless of age, ability, or circumstance, can live with dignity, hope, and equal opportunity.</p>
+</div>
+<div>
+<h2 class="text-4xl font-black main-cyan">Our Mission</h2>
+<p class="mt-6 text-lg leading-relaxed">To improve lives through compassionate service, food assistance, community outreach, elderly care initiatives, and support programs that create meaningful and lasting social impact.</p>
+</div>
+</div>
 </section>
 
-<!-- =========================
-FOOTER
-========================= -->
+<section class="py-24 bg-gray-100 text-center">
+<div class="max-w-4xl mx-auto px-6">
+<h2 class="text-5xl font-black main-blue">Every Act of Kindness Creates a Ripple of Hope</h2>
+<p class="mt-8 text-xl">Together, we can make a difference in the lives of those who need it most.</p>
+</div>
+</section>
 
-<footer class="bg-main-blue py-10 text-center text-white">
-
-  <p class="text-lg">
-    © 2026 Soul Foundation Charitable Trust.
-    All Rights Reserved.
-  </p>
-
+<footer class="bg-main-blue text-white py-16">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+<div>
+<h3 class="font-black text-2xl">Soul Foundation</h3>
+<p class="mt-4">Serving humanity through compassion, dignity, and community support.</p>
+</div>
+<div>
+<h3 class="font-black text-2xl">Contact</h3>
+<p class="mt-4">+91 9884152546</p>
+<p>soulfoundation2024@gmail.com</p>
+<p>Chennai - 600053</p>
+</div>
+<div>
+<h3 class="font-black text-2xl">Follow Us</h3>
+<p class="mt-4">Facebook</p>
+<p>Instagram</p>
+<p>YouTube</p>
+</div>
+</div>
+<div class="text-center mt-10">
+© 2026 Soul Foundation. All Rights Reserved.
+</div>
 </footer>
 
 </body>
 </html>
-```
