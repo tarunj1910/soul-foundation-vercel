@@ -18,9 +18,9 @@ html{scroll-behavior:smooth;}
 </style>
 </head>
 <body class="bg-white text-gray-800">
-
 <nav class="bg-white shadow-md sticky top-0 z-50">
-<div class="max-w-7xl mx-auto px-6 py-4 flex flex-col lg:flex-row gap-4 justify-between items-center">
+
+<div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 <div class="flex items-center gap-4">
 <img src="logo.jpg" class="w-14 md:w-20">
 <div>
@@ -31,35 +31,86 @@ html{scroll-behavior:smooth;}
 <p class="text-sm font-bold mt-1"><span class="main-blue">Charitable Trust For Adults & Children</span></p>
 </div>
 </div>
-<div class="flex flex-wrap justify-center gap-3 md:gap-4 text-sm md:text-base font-semibold text-gray-700">
+<!-- Desktop Menu -->
 
-  <a href="index.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    Home
-  </a>
+<div class="hidden lg:flex gap-3 md:gap-4 text-sm md:text-base font-semibold text-gray-700">
 
-  <a href="about.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    About Us
-  </a>
+<a href="index.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+Home
+</a>
 
-  <a href="our-work.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    Our Activities
-  </a>
+<a href="about.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+About Us
+</a>
 
-  <a href="gallery.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    Gallery
-  </a>
+<a href="our-work.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+Our Activities
+</a>
 
-  <a href="support.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    Support Us
-  </a>
+<a href="gallery.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+Gallery
+</a>
 
-  <a href="contact.html" class="px-4 py-2 border border-cyan-200 bg-white rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
-    Contact Us
-  </a>
+<a href="support.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+Support Us
+</a>
+
+<a href="contact.html"
+class="px-4 py-2 border border-cyan-200 rounded-lg shadow-sm hover:bg-cyan-50 hover:text-cyan-600 transition">
+Contact Us
+</a>
 
 </div>
+<button
+class="lg:hidden text-3xl main-blue ml-auto p-2"
+onclick="toggleMenu()">
+
+<i class="fas fa-bars"></i>
+
+</button>
 </div>
 </nav>
+
+<div
+id="mobileMenu"
+class="hidden lg:hidden bg-white shadow-xl">
+
+<a href="index.html"
+class="block px-6 py-4 border-b hover:bg-cyan-50">
+Home
+</a>
+
+<a href="about.html"
+class="block px-6 py-4 border-b hover:bg-cyan-50">
+About Us
+</a>
+
+<a href="our-work.html"
+class="block px-6 py-4 border-b hover:bg-cyan-50">
+Our Activities
+</a>
+
+<a href="gallery.html"
+class="block px-6 py-4 border-b hover:bg-cyan-50">
+Gallery
+</a>
+
+<a href="support.html"
+class="block px-6 py-4 border-b hover:bg-cyan-50">
+Support Us
+</a>
+
+<a href="contact.html"
+class="block px-6 py-4 hover:bg-cyan-50">
+Contact Us
+</a>
+
+</div>
 
 <section class="py-24 bg-gray-50">
 <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
@@ -281,6 +332,18 @@ class="flex justify-center md:justify-start items-center gap-3 hover:text-cyan-3
 © 2026 Soul Foundation. All Rights Reserved.
 </div>
 </footer>
+<script>
+
+function toggleMenu(){
+
+document
+.getElementById("mobileMenu")
+.classList
+.toggle("hidden");
+
+}
+
+</script>
 
 </body>
 </html>
